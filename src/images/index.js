@@ -1,0 +1,9 @@
+export { default as bible } from "./Bible.jpg";
+export { default as bg } from "./bg.jpeg";
+export { default as logo } from "./logo.png";
+export { default as photo1 } from "./photo1.jpg";
+export { default as photo2 } from "./photo2.jpg";
+export { default as photo3 } from "./photo3.jpg";
+export { default as photo4 } from "./photo4.jpg";
+export { default as radioLogo } from "./radio-logo.png";
+export { default as worship } from "./worship.jpg";
