@@ -3,7 +3,7 @@ import { Form, Input, SubmitButton, TextArea } from "./forms";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
-  phone: Yup.string().required().label("Phone"),
+  phone: Yup.number().required().label("Phone"),
   message: Yup.string().required().label("Message"),
 });
 

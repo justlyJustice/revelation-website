@@ -1,5 +1,5 @@
 // Package Imports
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // Component Imports
 import Home from "./pages/Home";
@@ -13,13 +13,13 @@ import "./styles/style.css";
 
 function App() {
   return (
-    <Switch>
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/gallery" component={Gallery} />
-      <Route path="/radio" component={Radio} />
-      <Route path="/" exact component={Home} />
-    </Switch>
+    <Routes>
+      <Route path="/about" exact element={<About />} />
+      <Route path="/contact" exact element={<Contact />} />
+      <Route path="/gallery" exact element={<Gallery />} />
+      <Route path="/radio" exact element={<Radio />} />
+      <Route path="/" exact element={<Home />} />
+    </Routes>
   );
 }
 
